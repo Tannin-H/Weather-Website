@@ -24,9 +24,10 @@
 }
 *{
   margin: 0;
+  font-family: Roboto, sans-serif;
 }
 ul{
-  padding-left: 350px;
+  padding-left: 325px;
 }
 li{
   font-size: 20px;
@@ -48,11 +49,26 @@ header:after {
 }
 .social-media img{
   float: right;
-  padding-right: 7px;
+  padding-top: 8px;
+  padding-right: 12px;
 }
 .logo{
   float: left;
   padding: 10px 0 10px 13px;
   width: 5%;
   height: 5%;
+}
+.graph-container{
+  text-align: center;
+}
+.graph{
+  display: inline-block;
+  width: 50%;
+  height: 50%;
+}
+.hourly{
+  margin-top: 30px;
+}
+.hourly h1{
+  margin-left: 60px;
 }
