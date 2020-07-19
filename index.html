@@ -32,21 +32,42 @@
     </div>
   </div>
 
-  <div class="current-conditions">
-    <div class="current-text">
-      <h1>Current Conditions</h1>
-      <img src="images/weather-icons/sun.png" alt="icon showing the weather" class="icon">
-      <p>Partly cloudly with spots of rain and a current temperature of x degrees</p>
-      <img src="images/weather-icons/temp.png" alt="Thermometer Icon" class="therm">
-      <h2>Wind speed</h2>
-      <p>30kmh</p>
-    </div>
-  </div>
+  <div class="row">
+    <div class="column left">
+      <div class="current-conditions">
+          <h1>Current Conditions</h1>
 
-  <div class="hourly">
-    <h1>48 Hour Forecast</h1>
-    <div class="graph-container">
-      <img src="images/proxy-graph.jpg" alt="graph display the 48 hour forecast" class="graph">
+          <div class="descrp-container">
+            <img src="images/weather-icons/sun.png" alt="icon showing the weather" class="icon">
+            <div class="descrp">
+              <p>Partly cloudly with spots of rain and a current temperature of x degrees</p>
+            </div>
+          </div>
+
+          <div class="wind-container">
+            <img src="images/weather-icons/wind.png" alt="wind icon" class="icon">
+            <div class="wind-text">
+              <p>Wind gusts of up to 30kmh in a easterly direction</p>
+            </div>
+          </div>
+
+          <div class="temp-container">
+            <img src="images/weather-icons/temp.png" alt="Thermometer Icon"  class="icon">
+            <div class="temp-text">
+              <p>High For Today: 7 degrees
+              <br>
+              <br>
+              Low For Today: 4 degrees</p>
+            </div>
+          </div>
+      </div>
+    </div>
+    <div class="column right">
+      <div class="hourly">
+        <div class="graph-container">
+          <img src="images/proxy-graph.jpg" alt="graph display the 48 hour forecast" class="graph">
+        </div>
+      </div>
     </div>
   </div>
 
