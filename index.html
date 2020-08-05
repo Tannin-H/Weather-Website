@@ -6,6 +6,7 @@
     <meta charset="UTF-8">
     <title>Weather website</title>
 </head>
+<body>
 <header>
   <div class="social-media">
       <img src="images/insta-logo.png" alt="Instagram icon" width="2%" height="2%">
@@ -13,7 +14,7 @@
       <img src="images/twitter-logo.png" alt="Twitter icon" width="2.5%" height="2.5%">
   </div>
   <nav>
-    <img src="images/logo.png" alt="logo" class="logo">
+    <img src="images/logo.png" alt="logo" id="logo">
     <ul>
       <a href= "index.html"><li>Home</li></a>
       <a href= "weather-maps.html"><li>Maps</li></a>
@@ -24,7 +25,6 @@
   </nav>
 </header>
 
-<body>
   <div class="hero-container">
     <img src="images/queenstown-hero.jpg" alt="Photo of queenstown" width="100%">
     <div class="hero-text">
@@ -37,23 +37,23 @@
       <div class="current-conditions">
           <h1>Current Conditions</h1>
 
-          <div class="descrp-container">
+          <div class="info-container">
             <img src="images/weather-icons/sun.png" alt="icon showing the weather" class="icon">
-            <div class="descrp">
+            <div class="current-text">
               <p>Partly cloudly with spots of rain and a current temperature of x degrees</p>
             </div>
           </div>
 
-          <div class="wind-container">
+          <div class="info-container">
             <img src="images/weather-icons/wind.png" alt="wind icon" class="icon">
-            <div class="wind-text">
+            <div class="current-text" id="wind-text">
               <p>Wind gusts of up to 30kmh in a easterly direction</p>
             </div>
           </div>
 
-          <div class="temp-container">
+          <div class="info-container">
             <img src="images/weather-icons/temp.png" alt="Thermometer Icon"  class="icon">
-            <div class="temp-text">
+            <div class="current-text" id="temp-text">
               <p>High For Today: 7 degrees
               <br>
               <br>
@@ -71,17 +71,49 @@
     </div>
   </div>
 
-  <div class="daily">
+  <section class="daily">
     <h1>7 Day Forecast</h1>
-    <div class="day-card">
-        <h2>Monday 29th of June</h2>
-        <img src="images/weather-icons/sun.png" alt="icon showing the weather">
+    <div class="forecast">
+
+      <div class="day-card">
+
+        <div class="date-icon">
+          <h2>Monday 29th of June</h2>
+          <img src="images/weather-icons/sun.png" alt="icon showing the weather">
+        </div>
+
+          <div class="daily-info">
+            <ul>
+              <li>17 &#8451;</li>
+              <li>3.2ml</li>
+              <li>30kmh</li>
+            </ul>
+          </div>
+
+      </div>
+      <div class="day-card">
+
+        <div class="date-icon">
+          <h2>Tuesday 30th of June</h2>
+          <img src="images/weather-icons/snow.png" alt="icon showing the weather">
+        </div>
+
+          <div class="daily-info">
+            <ul>
+              <li>-2 &#8451;</li>
+              <li>10ml</li>
+              <li>13kmh</li>
+            </ul>
+          </div>
+
+      </div>
+
     </div>
-  </div>
-</body>
+  </section>
 <footer>
   <p>attribute to artist of weather logos</p>
   <a href="http://www.freepik.com">Designed by Freepik</a>
   <p>Rights for the hero image attributed to ywam queenstown</p>
 </footer>
+</body>
 </html>

@@ -20,18 +20,18 @@
 */
 :root{
   --main-primary: #0764d6;
-  --nav-bar-color: #0764d6;
   --secondary-accent: #fcd61d; /* yellowy color tpo match logo*/
+  --main-gray: #eceeef;
 }
 *{
   margin: 0;
   padding: 0;
   font-family: Roboto, sans-serif;
 }
-ul{
+nav ul{
   padding-left: 22%;
 }
-li{
+nav li{
   font-size: 1.5vw;
   font-family: Roboto, sans-serif;
   font-weight: bold;
@@ -42,7 +42,7 @@ li{
   padding-right: 5%;
 }
 header{
-  background-color: var(--nav-bar-color);
+  background-color: var(--main-primary);
   position: sticky;
   top: 0;
   z-index: 1;
@@ -58,7 +58,7 @@ header:after {
   padding-top: 2%;
   padding-right: 1%;
 }
-.logo{
+#logo{
   float: left;
   padding: 10px 0 10px 13px;
   width: 5%;
@@ -78,16 +78,11 @@ header:after {
   font-size: 4vw;
 }
 .current-conditions{
-  background-color: #eceeef;
+  background-color: var(--main-gray);
   margin: 4% 0 0 20%;
   border-radius: 18%;
   padding: 1.6% 5% 4% 1.6%;
   float: left;
-}
-.current-content p{
-  padding-left: 30%;
-  font-size: 1.1vw;
-
 }
 .icon{
   width: 30%;
@@ -97,34 +92,28 @@ header:after {
 }
 .current-conditions h1{
   padding-left: 17%;
+  padding-top: 6%;
   font-size: 2vw;
   font-weight: normal;
   white-space: nowrap;
 }
-.descrp p{
+.current-text p{
   font-size: 1.1vw;
   padding-left: 20%;
   padding-top: 9%;
+  font-weight: normal;
 }
-.descrp-container{
-  float: left;
-}
-.wind-text p{
-  font-size: 1.1vw;
+
+#wind-text p{
   padding-left: 20%;
   padding-top: 11%;
-  font-weight: normal;
 }
-.wind-container{
-  float: left;
-}
-.temp-text p{
+
+#temp-text p{
   padding-top: 7.5%;
   padding-left: 30%;
-  font-size: 1.1vw;
-  font-weight: normal;
 }
-.temp-container{
+.info-container{
   float: left;
 }
 .graph-container{
@@ -165,21 +154,39 @@ header:after {
   margin-top: 40px;
   color: black;
 }
+.forecast{
+  margin: 0 20% 0 20%;
+  padding: 0 5% 0 5%;
+}
 .day-card {
-  background-color: #eceeef;
-  margin-left: 25%;
-  margin-right: 25%;
+  background-color: var(--main-gray);
+  border-radius: 30px;
+  display: block;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  box-shadow: 3px 3px 15px 6px #ccc;
+  margin-bottom: 2%;
 }
-.day-card h2{
+.date-icon h2{
   font-size: 1.5vw;
-  padding-left: 5px;
+  padding-left: 3%;
+  padding-top: 2%;
 }
-.day-card img{
-  width: 10%;
-  height: 10%;
+.date-icon img{
+  width: 15%;
+  height: 15%;
+}
+.daily-info ul{
+  padding-top: 6%;
+  list-style-type: none;
+}
+.daily-info li{
+  padding-top: 5%;
+  font-size: 1.3vw;
 }
 
-
+/* Break day card into two columns and line the information up down the right column*/
 
 
 
