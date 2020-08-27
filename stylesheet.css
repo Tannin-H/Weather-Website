@@ -79,7 +79,7 @@ header:after {
 }
 .current-conditions{
   background-color: var(--main-gray);
-  margin: 4% 0 0 20%;
+  margin: 4% 0 0 15%;
   border-radius: 18%;
   padding: 1.6% 5% 4% 1.6%;
   float: left;
@@ -134,11 +134,11 @@ header:after {
 }
 
 .left {
-  width: 30%;
+  width: 27%;
 }
 
 .right {
-  width: 70%;
+  width: 73%;
 
 }
 /* Clear floats after the columns */
@@ -161,29 +161,40 @@ header:after {
 .day-card {
   background-color: var(--main-gray);
   border-radius: 30px;
-  display: block;
   margin: 0 auto;
-  display: grid;
-  grid-template-columns: 3fr 1fr;
   box-shadow: 3px 3px 15px 6px #ccc;
   margin-bottom: 2%;
+
 }
-.date-icon h2{
+.day-card button{
   font-size: 1.5vw;
-  padding-left: 3%;
-  padding-top: 2%;
+  padding: 0 0 2% 3%;
+  margin: auto 0;
+  background-color: var(--main-gray);
+  display: inline-block;
+  border: none;
+
+}
+.date-icon{
+  display: block;
+  height: 200px
+
 }
 .date-icon img{
-  width: 15%;
-  height: 15%;
+  
+  float: right;
+
 }
-.daily-info ul{
-  padding-top: 6%;
+.day-content ul{
   list-style-type: none;
 }
-.daily-info li{
+.day-content li{
   padding-top: 5%;
   font-size: 1.3vw;
+}
+.day-content{
+  display: none;
+  overflow: hidden;
 }
 
 /* Break day card into two columns and line the information up down the right column*/
