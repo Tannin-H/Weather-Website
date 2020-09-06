@@ -199,17 +199,35 @@ header:after {
   width: 30%;
   border-radius: 50px;
   padding: 3%;
-  margin-bottom: 3vw;
+  margin-bottom: 30px;
 }
-
-
-
+.img-main{
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+  padding-left: 7%;
+}
+.img-main img{
+  width: 20%;
+  height: 20%;
+}
+.maps-main h1, p{
+  margin: 1% 0 1% 1%;
+}
+#scale{
+  width: 3%;
+  height: 3%;
+  display: inline-block;
+  float: left;
+  margin-left: 1%;
+}
 
 footer{
   background-color: var(--main-primary);
   color: white;
   padding: 0 21% 0 39%;
   font-size: 1vw;
+  padding-bottom: 5%;
 }
 footer h3{
   font-size: 1.3vw;
