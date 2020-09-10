@@ -215,8 +215,8 @@ header:after {
   margin: 1% 0 1% 1%;
 }
 #scale{
-  width: 3%;
-  height: 3%;
+  width: 4%;
+  height: 4%;
   display: inline-block;
   float: left;
   margin-left: 1%;
@@ -225,13 +225,15 @@ header:after {
 footer{
   background-color: var(--main-primary);
   color: white;
-  padding: 0 21% 0 39%;
   font-size: 1vw;
   padding-bottom: 5%;
+  margin: 0 auto;
+  display: block;
+  text-align: center;
 }
 footer h3{
   font-size: 1.3vw;
-  padding-left: 2%;
+  text-align: left;
 }
 footer ul{
   display: inline-block;
@@ -242,8 +244,60 @@ footer li{
   padding-bottom: 0.5%;
   list-style-type: circle;
   color: white;
-  font-size: 1vw;
+  text-align: left;
 }
 ul a {
   text-decoration: none;
+}
+footer p{
+
+}
+
+@media only screen and (max-width: 600px) {
+  nav ul{
+  margin: 0 auto;
+  text-align: center;
+  padding-right: 28%;
+  padding-top: 1.9%
+  }
+  nav li{
+    font-size: 2.3vw;
+    font-weight: bold;
+    color: white;
+    display: inline;
+    padding-right: 5%;
+  }
+  #logo{
+    width: 7%;
+    height: 7%;
+  }
+  .social-media img{
+    width: 3.5%;
+    height: 3.5%;
+  }
+  #insta-logo{
+    width: 3%;
+    height: 3%;
+  }
+  .maps-main h1{
+    font-size: 4vw;
+  }
+  .img-main img{
+    width: 45%;
+    height: 45%;
+  }
+  #scale{
+    width: 6%;
+    height: 6%;
+  }
+  footer{
+    text-align: center;
+    font-size: 2vw;
+  }
+  footer li{
+    font-size: 1.9vw;
+  }
+  footer h3{
+    font-size: 2vw;
+  }
 }
