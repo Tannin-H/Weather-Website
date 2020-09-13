@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+<!-- contains content not visible to the user -->
 <head>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="stylesheet.css">
@@ -8,21 +9,24 @@
     <title>Weather website</title>
 </head>
 <body>
+  <!--where the nav and content at the top mof the page is stored -->
   <header>
     <div class="social-media">
-        <img src="images/insta-logo.png" alt="Instagram icon" width="2%" height="2%">
-        <img src="images/facebook-logo.png" alt="Facebook icon" width="2.5%" height="2.5%">
-        <img src="images/twitter-logo.png" alt="Twitter icon" width="2.5%" height="2.5%">
+      <a href="https://about.instagram.com/"><img id="insta-logo" src="images/insta-logo.png" alt="Instagram icon"></a>
+      <a href="https://www.facebook.com/"><img src="images/facebook-logo.png" alt="Facebook icon"></a>
+      <a href="https://twitter.com/?lang=en"><img src="images/twitter-logo.png" alt="Twitter icon"></a>
     </div>
     <nav>
-      <img src="images/logo.png" alt="logo" id="logo">
+      <a href="index.html"><img src="images/logo.png" alt="logo" id="logo"></a>
       <ul>
-        <a href= "index.html"><li>Home</li></a>
-        <a href= "weather-maps.html"><li>Maps</li></a>
-        <a href= "webcams.html"><li>Queenstown Webcam</li></a>      <a href= "contact.html"><li>Contact Us</li></a>
+        <li><a href= "index.html">Home</a></li>
+        <li><a href= "weather-maps.html">Maps</a></li>
+        <li><a href= "webcams.html">Queenstown Webcam</a></li>
+        <li><a href= "contact.html">Contact Us</a></li>
       </ul>
     </nav>
   </header>
+  <!-- div tag storing the weather maps for the next 5 days-->
    <div class="maps-main">
      <h1>Weather Maps</h1>
      <img id="scale" src="images/scale.gif" alt="scale fore weather maps">
@@ -53,25 +57,29 @@
      </div>
    <p>Latest Forecast Issue At: 0000 NZST Thu 3 September 2020</p>
    </div>
-
+   <!-- section where copywrite, links to all other pages and legal information is stored-->
   <footer>
-    <ul>
+    <div class="attributes">
       <h3>Attributes:</h3>
-      <a href="http://www.freepik.com"target="_blank"><li>Designed by Freepik</li></a>
-      <a href="https://www.ywamqueenstown.com/"target="_blank"><li>Hero Image</li></a>
-      <a href="https://www.flaticon.com/free-icon/facebook_124010"target="_blank"><li>FaceBook Icon</li></a>
-      <a href="https://icons8.com/icons/set/instagram"target="_blank"><li>Instagram Icon</li></a>
-    </ul>
-    <ul>
+      <ul>
+        <li><a href="http://www.freepik.com"target="_blank">Designed by Freepik</a></li>
+        <li><a href="https://www.ywamqueenstown.com/"target="_blank">Hero Image</a></li>
+        <li><a href="https://www.flaticon.com/free-icon/facebook_124010"target="_blank">FaceBook Icon</a></li>
+        <li><a href="https://icons8.com/icons/set/instagram"target="_blank">Instagram Icon</a></li>
+      </ul>
+    </div>
+    <div class="pages">
       <h3>Pages:</h3>
-      <a href= "index.html"><li>Home</li></a>
-      <a href= "weather-maps.html"><li>Maps</li></a>
-
-      <a href= "webcams.html"><li>Queenstown Webcams</li></a>    <a href= "contact.html"><li>Contact Us</li></a>
-    </ul>
-    <br>
-    <br>
-    <p>Rights Reserved For Captian Canada Corporation(CCC)</p>
+      <ul>
+        <li><a href= "index.html">Home</a></li>
+        <li><a href= "weather-maps.html">Maps</a></li>
+        <li><a href= "webcams.html">Queenstown Webcam</a></li>
+        <li><a href= "contact.html">Cuntact Us</a></li>
+      </ul>
+    </div>
+  <br>
+  <br>
+  <p>Rights Reserved For Captian Canada Corporation(CCC)</p>
   </footer>
 </body>
 </html>

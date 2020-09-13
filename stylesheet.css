@@ -40,6 +40,9 @@ nav li{
   padding-top: 2.9%;
   padding-right: 5%;
 }
+nav a{
+  color: white;
+}
 header{
   background-color: var(--main-primary);
   position: sticky;
@@ -59,9 +62,17 @@ header:after {
 }
 #logo{
   float: left;
-  padding: 10px 0 10px 13px;
+  padding: 1px 0 10px 13px;
   width: 5%;
   height: 5%;
+}
+.social-media img{
+  width: 2.5%;
+  height: 2.5%;
+}
+#insta-logo{
+  width: 2%;
+  height: 2%;
 }
 .hero-container{
   position: relative;
@@ -195,10 +206,14 @@ header:after {
 .contact{
   padding-left: 30%;
 }
+.author p{
+  text-align: left;
+  margin-left: 0;
+}
 .author img{
   width: 30%;
   border-radius: 50px;
-  padding: 3%;
+  padding: 3% 3% 3% 1%;
   margin-bottom: 30px;
 }
 .img-main{
@@ -221,6 +236,11 @@ header:after {
   float: left;
   margin-left: 1%;
 }
+iframe{
+  width: 100%;
+  height: 70vh;
+  border: none;
+}
 
 footer{
   background-color: var(--main-primary);
@@ -232,10 +252,17 @@ footer{
   text-align: center;
 }
 footer h3{
-  font-size: 1.3vw;
+  font-size: 1.5vw;
   text-align: left;
+  padding-bottom: 6%;
+  margin-left: -11.8%;
 }
-footer ul{
+.attributes {
+  display: inline-block;
+  padding-left: 7%;
+  padding-top: 3%;
+}
+.pages{
   display: inline-block;
   padding-left: 7%;
   padding-top: 3%;
@@ -243,14 +270,14 @@ footer ul{
 footer li{
   padding-bottom: 0.5%;
   list-style-type: circle;
-  color: white;
   text-align: left;
 }
 ul a {
   text-decoration: none;
+  color: white;
 }
 footer p{
-
+  padding-left: 2.3%;
 }
 
 @media only screen and (max-width: 800px) {
@@ -261,7 +288,7 @@ footer p{
   padding-top: 1.9%
   }
   nav li{
-    font-size: 2.3vw;
+    font-size: 2vw;
     font-weight: bold;
     color: white;
     display: inline;
@@ -282,6 +309,9 @@ footer p{
   .maps-main h1{
     font-size: 4vw;
   }
+  .maps-main p{
+    font-size: 2vw;
+  }
   .img-main img{
     width: 45%;
     height: 45%;
@@ -289,6 +319,27 @@ footer p{
   #scale{
     width: 6%;
     height: 6%;
+  }
+  .contact-container{
+    width: 30%;
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+  }
+  .contact-container h2{
+    text-align: center;
+  }
+  .contact{
+    text-align: left;
+    padding: 0;
+    padding-bottom: 10%
+  }
+  .author{
+    text-align: left;
+  }
+  .author img{
+    width: 30%;
+    border-radius: 20px;
   }
   footer{
     text-align: center;
